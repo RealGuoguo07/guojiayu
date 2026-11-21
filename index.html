@@ -1,0 +1,533 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>郭佳煜 · 物理思维到 AI 实践</title>
+<meta name="theme-color" content="#030712">
+<meta name="description" content="郭佳煜，宁夏大学物理学本科生，三个月自学转型 AI 应用开发，寻找销售技术支持机会。">
+<link rel="preload" href="assets/plus-jakarta-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
+<style>/* Critical + full CSS inlined for zero render-blocking requests */
+*,:after,:before{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgba(59,130,246,.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgba(59,130,246,.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/*! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com*/*,:after,:before{box-sizing:border-box;border:0 solid #e5e7eb}:after,:before{--tw-content:""}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;-o-tab-size:4;tab-size:4;font-family:Plus Jakarta Sans,ui-sans-serif,system-ui,-apple-system,Segoe UI,Microsoft YaHei,PingFang SC,sans-serif;font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0}fieldset,legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::-moz-placeholder,textarea::-moz-placeholder{opacity:1;color:#9ca3af}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border-width:0}.pointer-events-none{pointer-events:none}.visible{visibility:visible}.fixed{position:fixed}.absolute{position:absolute}.relative{position:relative}.inset-0{inset:0}.bottom-4{bottom:1rem}.bottom-8{bottom:2rem}.left-0{left:0}.left-\[26px\]{left:26px}.right-0{right:0}.top-0{top:0}.top-4{top:1rem}.z-0{z-index:0}.z-10{z-index:10}.z-50{z-index:50}.mx-auto{margin-left:auto;margin-right:auto}.-mt-0{margin-top:0}.-mt-0\.5{margin-top:-.125rem}.mb-0{margin-bottom:0}.mb-0\.5{margin-bottom:.125rem}.mb-1{margin-bottom:.25rem}.mb-10{margin-bottom:2.5rem}.mb-12{margin-bottom:3rem}.mb-16{margin-bottom:4rem}.mb-4{margin-bottom:1rem}.mb-5{margin-bottom:1.25rem}.mb-6{margin-bottom:1.5rem}.mb-7{margin-bottom:1.75rem}.mb-8{margin-bottom:2rem}.ml-1{margin-left:.25rem}.ml-2{margin-left:.5rem}.mr-1{margin-right:.25rem}.mr-1\.5{margin-right:.375rem}.mt-0{margin-top:0}.mt-0\.5{margin-top:.125rem}.mt-10{margin-top:2.5rem}.mt-14{margin-top:3.5rem}.mt-3{margin-top:.75rem}.mt-6{margin-top:1.5rem}.mt-8{margin-top:2rem}.block{display:block}.inline-block{display:inline-block}.flex{display:flex}.inline-flex{display:inline-flex}.table{display:table}.grid{display:grid}.hidden{display:none}.aspect-\[4\/5\]{aspect-ratio:4/5}.h-10{height:2.5rem}.h-11{height:2.75rem}.h-12{height:3rem}.h-2{height:.5rem}.h-4{height:1rem}.h-5{height:1.25rem}.h-6{height:1.5rem}.h-64{height:16rem}.h-8{height:2rem}.h-9{height:2.25rem}.h-\[18px\]{height:18px}.h-\[72px\]{height:72px}.h-full{height:100%}.min-h-\[100svh\]{min-height:100svh}.min-h-\[300px\]{min-height:300px}.w-10{width:2.5rem}.w-11{width:2.75rem}.w-12{width:3rem}.w-2{width:.5rem}.w-4{width:1rem}.w-5{width:1.25rem}.w-6{width:1.5rem}.w-8{width:2rem}.w-9{width:2.25rem}.w-\[18px\]{width:18px}.w-full{width:100%}.w-px{width:1px}.min-w-0{min-width:0}.max-w-2xl{max-width:42rem}.max-w-3xl{max-width:48rem}.max-w-4xl{max-width:56rem}.max-w-6xl{max-width:72rem}.max-w-xl{max-width:36rem}.flex-1{flex:1 1 0%}.shrink-0{flex-shrink:0}.translate-x-0{--tw-translate-x:0px}.translate-x-0,.translate-y-0{transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.translate-y-0{--tw-translate-y:0px}.transform{transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}@keyframes ping{75%,to{transform:scale(2);opacity:0}}.animate-ping{animation:ping 1s cubic-bezier(0,0,.2,1) infinite}.grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}.flex-col{flex-direction:column}.flex-wrap{flex-wrap:wrap}.place-items-center{place-items:center}.items-start{align-items:flex-start}.items-center{align-items:center}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.gap-1{gap:.25rem}.gap-10{gap:2.5rem}.gap-2{gap:.5rem}.gap-2\.5{gap:.625rem}.gap-3{gap:.75rem}.gap-4{gap:1rem}.gap-5{gap:1.25rem}.gap-6{gap:1.5rem}.gap-8{gap:2rem}.space-y-1>:not([hidden])~:not([hidden]){--tw-space-y-reverse:0;margin-top:calc(.25rem*(1 - var(--tw-space-y-reverse)));margin-bottom:calc(.25rem*var(--tw-space-y-reverse))}.space-y-3>:not([hidden])~:not([hidden]){--tw-space-y-reverse:0;margin-top:calc(.75rem*(1 - var(--tw-space-y-reverse)));margin-bottom:calc(.75rem*var(--tw-space-y-reverse))}.space-y-4>:not([hidden])~:not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1rem*(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1rem*var(--tw-space-y-reverse))}.self-start{align-self:flex-start}.overflow-hidden{overflow:hidden}.overflow-x-hidden{overflow-x:hidden}.break-all{word-break:break-all}.rounded-2xl{border-radius:1rem}.rounded-full{border-radius:9999px}.rounded-lg{border-radius:.5rem}.rounded-xl{border-radius:.75rem}.border{border-width:1px}.border-l-2{border-left-width:2px}.border-t{border-top-width:1px}.border-cyan-400{--tw-border-opacity:1;border-color:rgb(34 211 238/var(--tw-border-opacity,1))}.border-cyan-400\/20{border-color:rgba(34,211,238,.2)}.border-cyan-400\/30{border-color:rgba(34,211,238,.3)}.border-cyan-400\/50{border-color:rgba(34,211,238,.5)}.border-white{--tw-border-opacity:1;border-color:rgb(255 255 255/var(--tw-border-opacity,1))}.border-white\/10{border-color:hsla(0,0%,100%,.1)}.border-white\/\[0\.06\]{border-color:hsla(0,0%,100%,.06)}.bg-cyan-400{--tw-bg-opacity:1;background-color:rgb(34 211 238/var(--tw-bg-opacity,1))}.bg-cyan-400\/10{background-color:rgba(34,211,238,.1)}.bg-cyan-400\/15{background-color:rgba(34,211,238,.15)}.bg-ink{--tw-bg-opacity:1;background-color:rgb(3 7 18/var(--tw-bg-opacity,1))}.bg-slate-900{--tw-bg-opacity:1;background-color:rgb(15 23 42/var(--tw-bg-opacity,1))}.bg-slate-900\/70{background-color:rgba(15,23,42,.7)}.bg-white{--tw-bg-opacity:1;background-color:rgb(255 255 255/var(--tw-bg-opacity,1))}.bg-white\/5{background-color:hsla(0,0%,100%,.05)}.bg-white\/\[0\.03\]{background-color:hsla(0,0%,100%,.03)}.object-cover{-o-object-fit:cover;object-fit:cover}.p-4{padding:1rem}.p-5{padding:1.25rem}.p-6{padding:1.5rem}.p-7{padding:1.75rem}.p-8{padding:2rem}.px-3{padding-left:.75rem;padding-right:.75rem}.px-3\.5{padding-left:.875rem;padding-right:.875rem}.px-4{padding-left:1rem;padding-right:1rem}.px-6{padding-left:1.5rem;padding-right:1.5rem}.px-7{padding-left:1.75rem;padding-right:1.75rem}.py-1{padding-top:.25rem;padding-bottom:.25rem}.py-1\.5{padding-top:.375rem;padding-bottom:.375rem}.py-12{padding-top:3rem;padding-bottom:3rem}.py-2{padding-top:.5rem;padding-bottom:.5rem}.py-2\.5{padding-top:.625rem;padding-bottom:.625rem}.py-24{padding-top:6rem;padding-bottom:6rem}.py-4{padding-top:1rem;padding-bottom:1rem}.py-8{padding-top:2rem;padding-bottom:2rem}.pb-16{padding-bottom:4rem}.pb-8{padding-bottom:2rem}.pl-2{padding-left:.5rem}.pl-5{padding-left:1.25rem}.pt-2{padding-top:.5rem}.pt-2\.5{padding-top:.625rem}.pt-20{padding-top:5rem}.pt-28{padding-top:7rem}.text-center{text-align:center}.font-sans{font-family:Plus Jakarta Sans,ui-sans-serif,system-ui,-apple-system,Segoe UI,Microsoft YaHei,PingFang SC,sans-serif}.text-2xl{font-size:1.5rem;line-height:2rem}.text-\[13px\]{font-size:13px}.text-base{font-size:1rem;line-height:1.5rem}.text-lg{font-size:1.125rem;line-height:1.75rem}.text-sm{font-size:.875rem;line-height:1.25rem}.text-xl{font-size:1.25rem;line-height:1.75rem}.font-bold{font-weight:700}.font-extrabold{font-weight:800}.font-medium{font-weight:500}.font-normal{font-weight:400}.font-semibold{font-weight:600}.leading-\[0\.92\]{line-height:.92}.leading-\[1\.85\]{line-height:1.85}.leading-relaxed{line-height:1.625}.tracking-\[-0\.04em\]{letter-spacing:-.04em}.tracking-\[0\.2em\]{letter-spacing:.2em}.tracking-tight{letter-spacing:-.025em}.tracking-wide{letter-spacing:.025em}.text-cyan-300{--tw-text-opacity:1;color:rgb(103 232 249/var(--tw-text-opacity,1))}.text-cyan-400{--tw-text-opacity:1;color:rgb(34 211 238/var(--tw-text-opacity,1))}.text-slate-300{--tw-text-opacity:1;color:rgb(203 213 225/var(--tw-text-opacity,1))}.text-slate-400{--tw-text-opacity:1;color:rgb(148 163 184/var(--tw-text-opacity,1))}.text-slate-500{--tw-text-opacity:1;color:rgb(100 116 139/var(--tw-text-opacity,1))}.text-slate-600{--tw-text-opacity:1;color:rgb(71 85 105/var(--tw-text-opacity,1))}.text-slate-950{--tw-text-opacity:1;color:rgb(2 6 23/var(--tw-text-opacity,1))}.text-white{--tw-text-opacity:1;color:rgb(255 255 255/var(--tw-text-opacity,1))}.antialiased{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.opacity-60{opacity:.6}.blur{--tw-blur:blur(8px)}.blur,.filter{filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}.backdrop-blur-xl{--tw-backdrop-blur:blur(24px);-webkit-backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)}.transition-all{transition-property:all;transition-timing-function:cubic-bezier(.4,0,.2,1);transition-duration:.15s}.transition-colors{transition-property:color,background-color,border-color,text-decoration-color,fill,stroke;transition-timing-function:cubic-bezier(.4,0,.2,1);transition-duration:.15s}.transition-transform{transition-property:transform;transition-timing-function:cubic-bezier(.4,0,.2,1);transition-duration:.15s}.duration-300{transition-duration:.3s}.ease-in-out{transition-timing-function:cubic-bezier(.4,0,.2,1)}@font-face{font-family:Plus Jakarta Sans;src:url(assets/plus-jakarta-sans-latin.woff2) format("woff2");font-weight:400 800;font-style:normal;font-display:swap}html{scroll-behavior:smooth}body{-webkit-font-smoothing:antialiased}.font-sans{font-family:Plus Jakarta Sans,system-ui,-apple-system,Segoe UI,Microsoft YaHei,PingFang SC,sans-serif}.glow{position:absolute;border-radius:9999px;filter:blur(140px);pointer-events:none}.glow-cyan{top:-220px;left:-180px;width:620px;height:620px;background:radial-gradient(circle,rgba(34,211,238,.9) 0,rgba(34,211,238,0) 70%);opacity:.14;animation:glowPulse 9s ease-in-out infinite}.glow-indigo{bottom:-260px;right:-200px;width:700px;height:700px;background:radial-gradient(circle,rgba(99,102,241,.9) 0,rgba(139,92,246,0) 70%);opacity:.13;animation:glowPulse 11s ease-in-out infinite reverse}.grain{position:absolute;inset:0;opacity:.025;mix-blend-mode:overlay;background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='a'%3E%3CfeTurbulence baseFrequency='.85' numOctaves='3' type='fractalNoise'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23a)'/%3E%3C/svg%3E")}@keyframes glowPulse{0%,to{opacity:.12;transform:scale(1)}50%{opacity:.2;transform:scale(1.08)}}.section-eyebrow{color:#22d3ee;font-size:.82rem;font-weight:700;letter-spacing:.14em}.section-title{font-size:clamp(2.1rem,5.2vw,3.4rem);font-weight:800;letter-spacing:-.035em;line-height:1.06;color:#fff}.site-header.scrolled{background:rgba(3,7,18,.72);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border-bottom:1px solid hsla(0,0%,100%,.08)}.nav-link{position:relative;padding:8px 14px;border-radius:10px;color:#cbd5e1;font-size:.9rem;font-weight:600;transition:color .2s,background .2s}.nav-link:hover{color:#fff;background:hsla(0,0%,100%,.06)}.hero-statement{font-size:clamp(4.2rem,13.5vw,11rem)}.hero-accent{background:linear-gradient(100deg,#67e8f9,#22d3ee 42%,#818cf8);-webkit-background-clip:text;background-clip:text;color:transparent}.scroll-cue{animation:cue 1.8s ease-in-out infinite}@keyframes cue{0%,to{transform:translateY(0);opacity:.5}50%{transform:translateY(6px);opacity:1}}.glass-card{background:rgba(15,23,42,.6);backdrop-filter:blur(24px);-webkit-backdrop-filter:blur(24px);border:1px solid hsla(0,0%,100%,.1);border-radius:1rem;transition:border-color .3s,box-shadow .3s,transform .3s}.glass-card:hover{border-color:rgba(34,211,238,.28)}.glass-photo{border:1px solid hsla(0,0%,100%,.1)}.glass-photo img{filter:grayscale(.55) contrast(1.05);transition:filter .5s,transform .8s}.glass-photo:hover img{filter:grayscale(.15) contrast(1.02);transform:scale(1.04)}.timeline-line{background:linear-gradient(180deg,rgba(34,211,238,.5),rgba(34,211,238,.08))}.edu-row{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:11px 2px;border-bottom:1px solid hsla(0,0%,100%,.06);color:#e2e8f0;font-size:.95rem}.edu-row:last-child{border-bottom:none}.tag-soft{color:#94a3b8;font-size:.8125rem}.stat-card:hover{transform:translateY(-4px);box-shadow:0 18px 50px -12px rgba(34,211,238,.22),inset 0 0 0 1px rgba(34,211,238,.25)}.stat-number{font-size:clamp(3.4rem,7vw,4.8rem);font-weight:800;line-height:1;letter-spacing:-.04em;display:flex;align-items:baseline;justify-content:center;font-variant-numeric:tabular-nums}.gradient-number{background:linear-gradient(100deg,#67e8f9,#22d3ee 55%,#818cf8);-webkit-background-clip:text;background-clip:text;color:transparent}.project-card{cursor:default}.project-card:hover{border-color:rgba(34,211,238,.35);transform:translateY(-3px);box-shadow:0 16px 40px -18px rgba(34,211,238,.25)}.year-badge{padding:3px 11px;border-radius:9999px;font-size:.8125rem;font-weight:700;color:#94a3b8;background:hsla(0,0%,100%,.05);border:1px solid hsla(0,0%,100%,.08);font-variant-numeric:tabular-nums}.tech-badge{display:inline-block;padding:5px 12px;border-radius:9999px;font-size:.8125rem;font-weight:600;background:rgba(6,182,212,.1);border:1px solid rgba(6,182,212,.2);color:#67e8f9}.ledger-preview{position:absolute;width:min(22vw,280px);aspect-ratio:4/3;right:0;top:0;opacity:0;transform:translateY(-6px);transition:opacity .2s,transform .2s;pointer-events:none;overflow:hidden;border-radius:1rem;border:1px solid hsla(0,0%,100%,.15);box-shadow:0 24px 60px -20px rgba(0,0,0,.8)}.ledger-preview.visible{opacity:1;transform:translateY(0)}.ledger-preview img{width:100%;height:100%;-o-object-fit:cover;object-fit:cover;filter:grayscale(.3)}.ability-chip{gap:10px;padding:14px 16px;border-radius:14px;background:rgba(6,182,212,.08);border:1px solid rgba(6,182,212,.18);color:#a5f3fc;font-weight:600;font-size:.95rem}.ability-chip,.skill-tile{display:flex;align-items:center}.skill-tile{flex-direction:column;justify-content:center;gap:9px;min-height:132px;padding:18px 12px;text-align:center;border-radius:1rem;background:rgba(15,23,42,.6);backdrop-filter:blur(24px);-webkit-backdrop-filter:blur(24px);border:1px solid hsla(0,0%,100%,.1);transition:transform .3s,border-color .3s,box-shadow .3s}.skill-tile:hover{transform:translateY(-4px);border-color:rgba(34,211,238,.35);box-shadow:0 14px 36px -16px rgba(34,211,238,.28)}.skill-ico{color:#22d3ee}.skill-tile strong{color:#fff;font-size:1.15rem;font-weight:800;letter-spacing:-.02em}.skill-tile>span:last-child{color:#94a3b8;font-size:.8125rem}.skill-tile-accent{background:rgba(6,182,212,.12);border-color:rgba(34,211,238,.3)}.skill-tile-accent strong{color:#67e8f9}.contact-line{display:flex;align-items:center;gap:16px;padding:16px 0;border-bottom:1px solid hsla(0,0%,100%,.07)}.contact-line:first-child{padding-top:0}.contact-ico{display:grid;place-items:center;width:44px;height:44px;border-radius:12px;flex-shrink:0;background:rgba(6,182,212,.1);color:#22d3ee}.contact-label{color:#64748b;font-size:.8125rem;margin-bottom:2px}.contact-value{color:#fff;font-weight:600;font-size:1.02rem}.copy-btn{display:inline-flex;align-items:center;gap:7px;margin-left:auto;flex-shrink:0;padding:9px 15px;border-radius:10px;font-size:.82rem;font-weight:700;color:#22d3ee;background:rgba(6,182,212,.1);border:1px solid rgba(6,182,212,.22);transition:background .2s,transform .2s}.copy-btn:hover{background:rgba(6,182,212,.2)}.btn-glow{position:relative;transition:box-shadow .3s,transform .2s,background .2s}.btn-glow:hover{box-shadow:0 0 0 1px rgba(34,211,238,.5),0 10px 34px -6px rgba(34,211,238,.55);transform:translateY(-2px)}.footer-col{display:flex;flex-direction:column;gap:9px;color:#94a3b8;font-size:.9rem}.footer-col-title{color:#fff;font-weight:700;font-size:.95rem;margin-bottom:4px}.footer-col a{transition:color .2s}.footer-col a:hover{color:#22d3ee}.footer-wordmark{font-size:clamp(4rem,19vw,17rem);font-weight:800;line-height:.8;letter-spacing:-.05em;text-align:center;color:transparent;-webkit-text-stroke:1px hsla(0,0%,100%,.16);background:linear-gradient(180deg,hsla(0,0%,100%,.14),hsla(0,0%,100%,.02));-webkit-background-clip:text;background-clip:text;-webkit-user-select:none;-moz-user-select:none;user-select:none;white-space:nowrap}.toast{position:fixed;left:50%;bottom:32px;z-index:100;display:flex;align-items:center;gap:11px;padding:13px 20px;border-radius:14px;background:rgba(15,23,42,.72);backdrop-filter:blur(24px);-webkit-backdrop-filter:blur(24px);border:1px solid rgba(34,211,238,.3);box-shadow:0 20px 50px -12px rgba(0,0,0,.7);color:#e2e8f0;font-weight:600;font-size:.92rem;opacity:0;transform:translate(-50%,24px);pointer-events:none;transition:opacity .3s,transform .3s}.toast.show{opacity:1;transform:translate(-50%)}.toast-ico{display:grid;place-items:center;width:24px;height:24px;border-radius:50%;background:rgba(34,211,238,.18);color:#22d3ee}.reveal{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s cubic-bezier(.2,.7,.3,1)}.reveal.in{opacity:1;transform:none}[data-drift]{animation:slowDrift 16s ease-in-out infinite alternate}@keyframes slowDrift{0%{transform:scale(1.02)}to{transform:scale(1.09) translateY(-1.5%)}}@media (max-width:900px){.ledger-preview{display:none}}@media (max-width:600px){.skill-tile{min-height:118px}.contact-line{gap:12px}.contact-ico{width:40px;height:40px}.toast{left:16px;right:16px;transform:translateY(24px);justify-content:center;width:auto}.toast.show{transform:translateY(0)}}@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,:after,:before{animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}.glow{animation:none}}@media (max-width:640px){.site-header a[aria-label=\8FD4\56DE\9876\90E8]{min-height:44px;display:inline-flex;align-items:center;white-space:nowrap}.site-header nav a.btn-glow{min-height:44px}.site-header .nav-action{min-height:44px;padding-top:0;padding-bottom:0}.contact-line a:not(.copy-btn),.footer-col a{position:relative;min-height:44px;display:inline-flex;align-items:center}.contact-line a:not(.copy-btn):after,.footer-col a:after{content:"";position:absolute;left:0;right:0;top:50%;transform:translateY(-50%);height:44px}.copy-btn{min-height:44px}.contact-line{padding-top:10px;padding-bottom:10px}}.selection\:bg-cyan-400\/30 ::-moz-selection{background-color:rgba(34,211,238,.3)}.selection\:bg-cyan-400\/30 ::selection{background-color:rgba(34,211,238,.3)}.selection\:text-white ::-moz-selection{--tw-text-opacity:1;color:rgb(255 255 255/var(--tw-text-opacity,1))}.selection\:text-white ::selection{--tw-text-opacity:1;color:rgb(255 255 255/var(--tw-text-opacity,1))}.selection\:bg-cyan-400\/30::-moz-selection{background-color:rgba(34,211,238,.3)}.selection\:bg-cyan-400\/30::selection{background-color:rgba(34,211,238,.3)}.selection\:text-white::-moz-selection{--tw-text-opacity:1;color:rgb(255 255 255/var(--tw-text-opacity,1))}.selection\:text-white::selection{--tw-text-opacity:1;color:rgb(255 255 255/var(--tw-text-opacity,1))}.hover\:bg-cyan-300:hover{--tw-bg-opacity:1;background-color:rgb(103 232 249/var(--tw-bg-opacity,1))}.hover\:text-cyan-300:hover{--tw-text-opacity:1;color:rgb(103 232 249/var(--tw-text-opacity,1))}.group:hover .group-hover\:translate-x-0\.5{--tw-translate-x:0.125rem}.group:hover .group-hover\:translate-x-0\.5,.group:hover .group-hover\:translate-y-0\.5{transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.group:hover .group-hover\:translate-y-0\.5{--tw-translate-y:0.125rem}.group:hover .group-hover\:border-cyan-400\/40{border-color:rgba(34,211,238,.4)}@media (min-width:640px){.sm\:ml-2{margin-left:.5rem}.sm\:inline{display:inline}.sm\:flex{display:flex}.sm\:inline-flex{display:inline-flex}.sm\:h-\[420px\]{height:420px}.sm\:grid-cols-3{grid-template-columns:repeat(3,minmax(0,1fr))}.sm\:flex-row{flex-direction:row}.sm\:items-start{align-items:flex-start}.sm\:gap-2{gap:.5rem}.sm\:gap-4{gap:1rem}.sm\:gap-6{gap:1.5rem}.sm\:p-10{padding:2.5rem}.sm\:p-7{padding:1.75rem}.sm\:p-9{padding:2.25rem}.sm\:px-5{padding-left:1.25rem;padding-right:1.25rem}.sm\:px-8{padding-left:2rem;padding-right:2rem}.sm\:py-12{padding-top:3rem;padding-bottom:3rem}.sm\:py-16{padding-top:4rem;padding-bottom:4rem}.sm\:py-32{padding-top:8rem;padding-bottom:8rem}.sm\:text-2xl{font-size:1.5rem;line-height:2rem}.sm\:text-3xl{font-size:1.875rem;line-height:2.25rem}.sm\:text-base{font-size:1rem;line-height:1.5rem}.sm\:text-lg{font-size:1.125rem;line-height:1.75rem}.sm\:text-sm{font-size:.875rem;line-height:1.25rem}.sm\:text-xl{font-size:1.25rem;line-height:1.75rem}}@media (min-width:768px){.md\:mt-12{margin-top:3rem}.md\:grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}.md\:grid-cols-4{grid-template-columns:repeat(4,minmax(0,1fr))}.md\:flex-row{flex-direction:row}.md\:items-end{align-items:flex-end}.md\:justify-between{justify-content:space-between}.md\:text-2xl{font-size:1.5rem;line-height:2rem}}@media (min-width:1024px){.lg\:col-span-2{grid-column:span 2/span 2}.lg\:col-span-3{grid-column:span 3/span 3}.lg\:h-auto{height:auto}.lg\:grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}.lg\:grid-cols-4{grid-template-columns:repeat(4,minmax(0,1fr))}.lg\:grid-cols-5{grid-template-columns:repeat(5,minmax(0,1fr))}.lg\:gap-16{gap:4rem}.lg\:px-12{padding-left:3rem;padding-right:3rem}}
+</style>
+</head>
+<body class="font-sans antialiased bg-ink text-slate-300 overflow-x-hidden selection:bg-cyan-400/30 selection:text-white">
+
+<!-- 环境光斑 -->
+<div class="pointer-events-none fixed inset-0 z-0 overflow-hidden" aria-hidden="true">
+  <div class="glow glow-cyan"></div>
+  <div class="glow glow-indigo"></div>
+  <div class="grain"></div>
+</div>
+
+<!-- 顶部导航 -->
+<header class="site-header fixed top-0 left-0 right-0 z-50 transition-all duration-300">
+  <div class="max-w-6xl mx-auto px-6 sm:px-8 lg:px-12 h-[72px] flex items-center justify-between">
+    <a href="#top" class="group flex items-center gap-2.5 text-white font-extrabold tracking-tight text-lg" aria-label="返回顶部">
+      <span class="grid place-items-center w-9 h-9 rounded-xl bg-cyan-400/10 border border-cyan-400/20 text-cyan-300">
+        <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-atom w-[18px] h-[18px]" aria-hidden="true"><circle cx="12" cy="12" r="1"/><path d="M20.2 20.2c2.04-2.03.02-7.36-4.5-11.9-4.54-4.52-9.87-6.54-11.9-4.5-2.04 2.03-.02 7.36 4.5 11.9 4.54 4.52 9.87 6.54 11.9 4.5Z"/><path d="M15.7 15.7c4.52-4.54 6.54-9.87 4.5-11.9-2.03-2.04-7.36-.02-11.9 4.5-4.52 4.54-6.54 9.87-4.5 11.9 2.03 2.04 7.36.02 11.9-4.5Z"/></svg>
+      </span>
+      郭佳煜
+    </a>
+    <nav class="flex items-center gap-1 sm:gap-2" aria-label="主导航">
+      <a href="#about" class="nav-link hidden sm:inline-flex">关于</a>
+      <a href="#projects" class="nav-link hidden sm:inline-flex">项目</a>
+      <a href="#practice" class="nav-link hidden sm:inline-flex">实践</a>
+      <a href="mailto:2516139189@qq.com?subject=求职咨询%20·%20销售技术支持" class="btn-glow inline-flex items-center gap-2 ml-1 sm:ml-2 px-4 sm:px-5 py-2.5 rounded-full bg-cyan-400 text-slate-950 font-bold text-sm hover:bg-cyan-300 transition-colors">
+        <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-send w-4 h-4" aria-hidden="true"><path d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z"/><path d="m21.854 2.147-10.94 10.939"/></svg>
+        <span>联系我</span>
+      </a>
+    </nav>
+  </div>
+</header>
+
+<main class="relative z-10">
+
+  <!-- 首屏 -->
+  <section class="hero relative min-h-[100svh] flex flex-col justify-center pt-28 pb-16" id="top">
+    <div class="max-w-6xl mx-auto px-6 sm:px-8 lg:px-12 w-full">
+      <div class="reveal inline-flex items-center gap-2 mb-8 px-3.5 py-1.5 rounded-full bg-white/5 border border-white/10 text-cyan-300 text-[13px] sm:text-sm font-semibold tracking-wide">
+        <span class="relative flex w-2 h-2">
+          <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-cyan-400 opacity-60"></span>
+          <span class="relative inline-flex rounded-full w-2 h-2 bg-cyan-400"></span>
+        </span>
+        宁夏大学 · 物理学本科 · 求职中
+      </div>
+
+      <h1 class="reveal hero-statement font-extrabold tracking-[-0.04em] leading-[0.92] text-white">
+        <span class="block">物理思维</span>
+        <span class="block hero-accent">AI 实践</span>
+      </h1>
+
+      <div class="reveal mt-10 md:mt-12 flex flex-col md:flex-row md:items-end md:justify-between gap-8">
+        <p class="max-w-xl text-lg sm:text-xl md:text-2xl leading-relaxed text-slate-300 font-medium">
+          宁夏大学物理学本科生。三个月自学转型 AI 应用开发，正在寻找<span class="text-cyan-300">销售技术支持</span>的机会。
+        </p>
+        <a href="#projects" class="btn-glow group shrink-0 inline-flex items-center justify-center gap-3 px-7 py-4 rounded-2xl bg-cyan-400 text-slate-950 font-bold text-base hover:bg-cyan-300 transition-colors">
+          看我的项目
+          <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-down-right w-5 h-5 group-hover:translate-x-0.5 group-hover:translate-y-0.5 transition-transform" aria-hidden="true"><path d="m7 7 10 10"/><path d="M17 7v10H7"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <div class="reveal hidden sm:flex absolute bottom-8 left-0 right-0 justify-center">
+      <div class="flex flex-col items-center gap-2 text-slate-400 text-[13px] tracking-[0.2em]">
+        <span>SCROLL</span>
+        <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down w-4 h-4 scroll-cue" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- 我的路径 -->
+  <section class="py-24 sm:py-32" id="intro">
+    <div class="max-w-6xl mx-auto px-6 sm:px-8 lg:px-12">
+      <div class="reveal section-eyebrow flex items-center gap-3 mb-5">
+        <span class="grid place-items-center w-8 h-8 rounded-lg bg-cyan-400/10 border border-cyan-400/20 text-cyan-300"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-route w-4 h-4" aria-hidden="true"><circle cx="6" cy="19" r="3"/><path d="M9 19h8.5a3.5 3.5 0 0 0 0-7h-11a3.5 3.5 0 0 1 0-7H15"/><circle cx="18" cy="5" r="3"/></svg></span>
+        <span>01 / 我的路径</span>
+      </div>
+      <h2 class="reveal section-title text-white">从公式，到产品</h2>
+
+      <div class="mt-14 grid lg:grid-cols-2 gap-10 lg:gap-16 items-start">
+        <!-- 时间轴步骤 -->
+        <ol class="relative space-y-3 pl-2">
+          <span class="timeline-line absolute left-[26px] top-4 bottom-4 w-px" aria-hidden="true"></span>
+          <li class="reveal step-item flex items-start gap-5 group">
+            <span class="relative z-10 shrink-0 grid place-items-center w-12 h-12 rounded-2xl bg-slate-900/70 backdrop-blur-xl border border-white/10 text-cyan-300 group-hover:border-cyan-400/40 transition-colors"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-atom w-5 h-5" aria-hidden="true"><circle cx="12" cy="12" r="1"/><path d="M20.2 20.2c2.04-2.03.02-7.36-4.5-11.9-4.54-4.52-9.87-6.54-11.9-4.5-2.04 2.03-.02 7.36 4.5 11.9 4.54 4.52 9.87 6.54 11.9 4.5Z"/><path d="M15.7 15.7c4.52-4.54 6.54-9.87 4.5-11.9-2.03-2.04-7.36-.02-11.9 4.5-4.52 4.54-6.54 9.87-4.5 11.9 2.03 2.04 7.36.02 11.9-4.5Z"/></svg></span>
+            <div class="pt-2.5"><p class="text-lg sm:text-xl font-semibold text-white">物理，教我建立模型</p></div>
+          </li>
+          <li class="reveal step-item flex items-start gap-5 group">
+            <span class="relative z-10 shrink-0 grid place-items-center w-12 h-12 rounded-2xl bg-slate-900/70 backdrop-blur-xl border border-white/10 text-cyan-300 group-hover:border-cyan-400/40 transition-colors"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-code-2 w-5 h-5" aria-hidden="true"><path d="m18 16 4-4-4-4"/><path d="m6 8-4 4 4 4"/><path d="m14.5 4-5 16"/></svg></span>
+            <div class="pt-2.5"><p class="text-lg sm:text-xl font-semibold text-white">自学，教我编写代码</p></div>
+          </li>
+          <li class="reveal step-item flex items-start gap-5 group">
+            <span class="relative z-10 shrink-0 grid place-items-center w-12 h-12 rounded-2xl bg-slate-900/70 backdrop-blur-xl border border-white/10 text-cyan-300 group-hover:border-cyan-400/40 transition-colors"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-sparkles w-5 h-5" aria-hidden="true"><path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"/><path d="M20 3v4"/><path d="M22 5h-4"/><path d="M4 17v2"/><path d="M5 18H3"/></svg></span>
+            <div class="pt-2.5"><p class="text-lg sm:text-xl font-semibold text-white">AI，教我放大产出</p></div>
+          </li>
+          <li class="reveal step-item flex items-start gap-5 group">
+            <span class="relative z-10 shrink-0 grid place-items-center w-12 h-12 rounded-2xl bg-slate-900/70 backdrop-blur-xl border border-white/10 text-cyan-300 group-hover:border-cyan-400/40 transition-colors"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-5 h-5" aria-hidden="true"><path d="M21.801 10A10 10 0 1 1 17 3.335"/><path d="m9 11 3 3L22 4"/></svg></span>
+            <div class="pt-2.5"><p class="text-lg sm:text-xl font-semibold text-white">实践，教我完成交付</p></div>
+          </li>
+          <li class="reveal step-item flex items-start gap-5 group">
+            <span class="relative z-10 shrink-0 grid place-items-center w-12 h-12 rounded-2xl bg-cyan-400/15 border border-cyan-400/30 text-cyan-300"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-flag w-5 h-5" aria-hidden="true"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"/><line x1="4" x2="4" y1="22" y2="15"/></svg></span>
+            <div class="pt-2.5"><p class="text-lg sm:text-xl font-bold text-cyan-300">下一站，交给真实的工作</p></div>
+          </li>
+        </ol>
+
+        <!-- 图片组 -->
+        <div class="reveal grid grid-cols-2 gap-4">
+          <figure class="glass-photo overflow-hidden rounded-2xl">
+            <img src="assets/physics-apparatus.webp" alt="暗光下的物理实验器材特写" width="1536" height="1024" loading="lazy" decoding="async" fetchpriority="high" data-drift class="w-full h-full object-cover aspect-[4/5]">
+          </figure>
+          <figure class="glass-photo overflow-hidden rounded-2xl mt-10">
+            <img src="assets/study-desk.webp" alt="摊开的笔记本与学习材料俯拍" width="1536" height="1024" loading="lazy" decoding="async" fetchpriority="high" class="w-full h-full object-cover aspect-[4/5]">
+          </figure>
+        </div>
+      </div>
+
+      <p class="reveal mt-14 text-slate-400 text-base sm:text-lg border-l-2 border-cyan-400/50 pl-5 max-w-2xl">从公式到产品，把严谨的思维迁移到真实的问题上。</p>
+    </div>
+  </section>
+
+  <!-- 关于我 -->
+  <section class="py-24 sm:py-32" id="about">
+    <div class="max-w-6xl mx-auto px-6 sm:px-8 lg:px-12">
+      <div class="reveal section-eyebrow flex items-center gap-3 mb-5">
+        <span class="grid place-items-center w-8 h-8 rounded-lg bg-cyan-400/10 border border-cyan-400/20 text-cyan-300"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-user-round w-4 h-4" aria-hidden="true"><circle cx="12" cy="8" r="5"/><path d="M20 21a8 8 0 0 0-16 0"/></svg></span>
+        <span>02 / 关于我</span>
+      </div>
+      <h2 class="reveal section-title text-white mb-10">严谨，且愿意动手</h2>
+
+      <div class="reveal grid sm:grid-cols-3 gap-4 mb-6">
+        <div class="glass-card p-5 flex items-center gap-4">
+          <span class="grid place-items-center w-11 h-11 rounded-xl bg-cyan-400/10 text-cyan-300 shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-briefcase w-5 h-5" aria-hidden="true"><path d="M16 20V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/><rect width="20" height="14" x="2" y="6" rx="2"/></svg></span>
+          <div><p class="text-[13px] text-slate-400 mb-0.5">意向岗位</p><p class="text-white font-semibold">销售技术支持</p></div>
+        </div>
+        <div class="glass-card p-5 flex items-center gap-4">
+          <span class="grid place-items-center w-11 h-11 rounded-xl bg-cyan-400/10 text-cyan-300 shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map-pin w-5 h-5" aria-hidden="true"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg></span>
+          <div><p class="text-[13px] text-slate-400 mb-0.5">意向城市</p><p class="text-white font-semibold">银川 · 远程</p></div>
+        </div>
+        <div class="glass-card p-5 flex items-center gap-4">
+          <span class="grid place-items-center w-11 h-11 rounded-xl bg-cyan-400/10 text-cyan-300 shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-dot w-5 h-5" aria-hidden="true"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="1"/></svg></span>
+          <div><p class="text-[13px] text-slate-400 mb-0.5">当前状态</p><p class="text-white font-semibold">在校 · 实习</p></div>
+        </div>
+      </div>
+
+      <div class="reveal glass-card p-7 sm:p-9 mb-6">
+        <p class="text-lg sm:text-xl leading-[1.85] text-slate-300">
+          物理学专业背景培养了扎实的逻辑思维与问题建模能力；通过学生会与志愿服务实践，锻炼了执行力、沟通力与责任意识；主动学习软件开发相关技能，具备从理论理解到工具应用的迁移能力；责任心强，注重细节，能高效完成交付任务。
+        </p>
+      </div>
+
+      <!-- 教育双列卡片 -->
+      <div class="grid md:grid-cols-2 gap-6">
+        <div class="reveal glass-card p-6 sm:p-7">
+          <div class="flex items-center gap-3 mb-5">
+            <span class="grid place-items-center w-10 h-10 rounded-xl bg-cyan-400/10 text-cyan-300"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-graduation-cap w-5 h-5" aria-hidden="true"><path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z"/><path d="M22 10v6"/><path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"/></svg></span>
+            <h3 class="text-white font-bold text-lg">教育背景</h3>
+          </div>
+          <ul class="space-y-1">
+            <li class="edu-row"><span>宁夏大学</span><span class="tag-soft">本科在读</span></li>
+            <li class="edu-row"><span>物理学</span><span class="tag-soft">主修</span></li>
+            <li class="edu-row"><span>力学 · 电磁学</span><span class="tag-soft">课程</span></li>
+            <li class="edu-row"><span>热学 · 光学</span><span class="tag-soft">课程</span></li>
+            <li class="edu-row"><span>近代物理</span><span class="tag-soft">课程</span></li>
+          </ul>
+        </div>
+        <div class="reveal glass-card p-6 sm:p-7">
+          <div class="flex items-center gap-3 mb-5">
+            <span class="grid place-items-center w-10 h-10 rounded-xl bg-cyan-400/10 text-cyan-300"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-book-open w-5 h-5" aria-hidden="true"><path d="M12 7v14"/><path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"/></svg></span>
+            <h3 class="text-white font-bold text-lg">AI 自学计划 <span class="text-slate-400 font-normal text-sm ml-1">2025.06—09</span></h3>
+          </div>
+          <ul class="space-y-1">
+            <li class="edu-row"><span>Prompt 工程</span><span class="tag-soft">入门</span></li>
+            <li class="edu-row"><span>Python 基础</span><span class="tag-soft">掌握</span></li>
+            <li class="edu-row"><span>AI 调用接口</span><span class="tag-soft">实践</span></li>
+            <li class="edu-row"><span>前端网页开发</span><span class="tag-soft">实践</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <figure class="reveal glass-photo overflow-hidden rounded-2xl mt-6 h-64 sm:h-[420px]">
+        <img src="assets/code-workspace.webp" alt="夜间的编程工作台，屏幕上是代码与神经网络图示" width="1536" height="1024" loading="lazy" decoding="async" class="w-full h-full object-cover">
+      </figure>
+    </div>
+  </section>
+
+  <!-- 亮点战绩 / 指标看板 -->
+  <section class="py-12 sm:py-16" id="stats">
+    <div class="max-w-6xl mx-auto px-6 sm:px-8 lg:px-12">
+      <h2 class="sr-only">关键数字</h2>
+      <div class="grid sm:grid-cols-3 gap-5 sm:gap-6">
+        <div class="stat-card group glass-card p-8 text-center">
+          <div class="stat-number gradient-number">3<span class="text-2xl sm:text-3xl ml-1">个月</span></div>
+          <p class="mt-3 text-slate-400 text-sm sm:text-base">完成从零到应用的跨越</p>
+        </div>
+        <div class="stat-card group glass-card p-8 text-center">
+          <div class="stat-number gradient-number">15<span class="text-2xl sm:text-3xl ml-1">张</span></div>
+          <p class="mt-3 text-slate-400 text-sm sm:text-base">AI 相关证书</p>
+        </div>
+        <div class="stat-card group glass-card p-8 text-center">
+          <div class="stat-number gradient-number">1<span class="text-2xl sm:text-3xl ml-1">个</span></div>
+          <p class="mt-3 text-slate-400 text-sm sm:text-base">独立开发的个人网站</p>
+        </div>
+      </div>
+      <p class="reveal mt-6 text-center text-slate-400 text-sm">把物理的严谨，带进每一次实践。</p>
+    </div>
+  </section>
+
+  <!-- 项目经历 -->
+  <section class="py-24 sm:py-32" id="projects">
+    <div class="max-w-6xl mx-auto px-6 sm:px-8 lg:px-12">
+      <div class="reveal section-eyebrow flex items-center gap-3 mb-5">
+        <span class="grid place-items-center w-8 h-8 rounded-lg bg-cyan-400/10 border border-cyan-400/20 text-cyan-300"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-folder-kanban w-4 h-4" aria-hidden="true"><path d="M4 20h16a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.93a2 2 0 0 1-1.66-.9l-.82-1.2A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13c0 1.1.9 2 2 2Z"/><path d="M8 10v4"/><path d="M12 10v2"/><path d="M16 10v6"/></svg></span>
+        <span>03 / 项目经历</span>
+      </div>
+      <h2 class="reveal section-title text-white mb-12">做过的东西</h2>
+
+      <div class="ledger-wrap relative">
+        <div class="space-y-4 max-w-4xl">
+          <article class="reveal project-card glass-card p-6 sm:p-7" data-preview="assets/code-workspace.webp" tabindex="0">
+            <div class="flex flex-col sm:flex-row sm:items-start gap-5">
+              <span class="grid place-items-center w-12 h-12 rounded-xl bg-cyan-400/10 text-cyan-300 shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-globe w-6 h-6" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg></span>
+              <div class="flex-1 min-w-0">
+                <div class="flex flex-wrap items-center gap-3 mb-1">
+                  <h3 class="text-white font-bold text-xl">个人简历网站</h3>
+                  <span class="year-badge">2025</span>
+                </div>
+                <p class="text-slate-400 text-sm mb-4">前端开发 · 独立设计</p>
+                <div class="flex flex-wrap gap-2">
+                  <span class="tech-badge">HTML</span>
+                  <span class="tech-badge">CSS</span>
+                  <span class="tech-badge">JavaScript</span>
+                  <span class="tech-badge">响应式布局</span>
+                </div>
+              </div>
+              <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right w-5 h-5 text-slate-600 shrink-0 self-start" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+            </div>
+          </article>
+
+          <article class="reveal project-card glass-card p-6 sm:p-7" data-preview="assets/study-desk.webp" tabindex="0">
+            <div class="flex flex-col sm:flex-row sm:items-start gap-5">
+              <span class="grid place-items-center w-12 h-12 rounded-xl bg-cyan-400/10 text-cyan-300 shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-workflow w-6 h-6" aria-hidden="true"><rect width="8" height="8" x="3" y="3" rx="2"/><path d="M7 11v4a2 2 0 0 0 2 2h4"/><rect width="8" height="8" x="13" y="13" rx="2"/></svg></span>
+              <div class="flex-1 min-w-0">
+                <div class="flex flex-wrap items-center gap-3 mb-1">
+                  <h3 class="text-white font-bold text-xl">AI 自动化工作流</h3>
+                  <span class="year-badge">2025</span>
+                </div>
+                <p class="text-slate-400 text-sm mb-4">效率工具 · 场景落地</p>
+                <div class="flex flex-wrap gap-2">
+                  <span class="tech-badge">笔记整理</span>
+                  <span class="tech-badge">写作辅助</span>
+                  <span class="tech-badge">PPT 设计</span>
+                  <span class="tech-badge">图像处理</span>
+                </div>
+              </div>
+              <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right w-5 h-5 text-slate-600 shrink-0 self-start" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+            </div>
+          </article>
+
+          <article class="reveal project-card glass-card p-6 sm:p-7" data-preview="assets/physics-apparatus.webp" tabindex="0">
+            <div class="flex flex-col sm:flex-row sm:items-start gap-5">
+              <span class="grid place-items-center w-12 h-12 rounded-xl bg-cyan-400/10 text-cyan-300 shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-sparkles w-6 h-6" aria-hidden="true"><path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"/><path d="M20 3v4"/><path d="M22 5h-4"/><path d="M4 17v2"/><path d="M5 18H3"/></svg></span>
+              <div class="flex-1 min-w-0">
+                <div class="flex flex-wrap items-center gap-3 mb-1">
+                  <h3 class="text-white font-bold text-xl">第一个 AI 实战项目</h3>
+                  <span class="year-badge">2026</span>
+                </div>
+                <p class="text-slate-400 text-sm mb-4">Prompt 到应用 · 打磨中</p>
+                <div class="flex flex-wrap gap-2">
+                  <span class="tech-badge">Prompt 工程</span>
+                  <span class="tech-badge">AI 应用</span>
+                  <span class="tech-badge">开发中</span>
+                </div>
+              </div>
+              <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right w-5 h-5 text-slate-600 shrink-0 self-start" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+            </div>
+          </article>
+        </div>
+
+        <div class="ledger-preview" id="ledgerPreview" aria-hidden="true">
+          <img src="assets/code-workspace.webp" alt="" width="1536" height="1024" decoding="async">
+        </div>
+      </div>
+
+      <p class="reveal mt-10 text-slate-400 text-sm leading-relaxed max-w-3xl">
+        <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-file-text w-4 h-4 inline-block mr-1.5 -mt-0.5 text-cyan-400" aria-hidden="true"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/><path d="M10 9H8"/><path d="M16 13H8"/><path d="M16 17H8"/></svg>
+        简历原文：独立设计并开发个人简历网站前端页面，实现响应式布局与交互功能；将 AI 工具嵌入笔记、写作、PPT 设计、图像处理等日常场景。
+      </p>
+    </div>
+  </section>
+
+  <!-- 实践经验 -->
+  <section class="py-24 sm:py-32" id="practice">
+    <div class="max-w-6xl mx-auto px-6 sm:px-8 lg:px-12">
+      <div class="reveal section-eyebrow flex items-center gap-3 mb-5">
+        <span class="grid place-items-center w-8 h-8 rounded-lg bg-cyan-400/10 border border-cyan-400/20 text-cyan-300"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-handshake w-4 h-4" aria-hidden="true"><path d="m11 17 2 2a1 1 0 1 0 3-3"/><path d="m14 14 2.5 2.5a1 1 0 1 0 3-3l-3.88-3.88a3 3 0 0 0-4.24 0l-.88.88a1 1 0 1 1-3-3l2.81-2.81a5.79 5.79 0 0 1 7.06-.87l.47.28a2 2 0 0 0 1.42.25L21 4"/><path d="m21 3 1 11h-2"/><path d="M3 3 2 14l6.5 6.5a1 1 0 1 0 3-3"/><path d="M3 4h8"/></svg></span>
+        <span>04 / 实践经验</span>
+      </div>
+      <h2 class="reveal section-title text-white mb-10">在组织与协作中成长</h2>
+
+      <div class="grid lg:grid-cols-5 gap-6">
+        <div class="reveal glass-card p-7 sm:p-9 lg:col-span-3">
+          <p class="text-xl sm:text-2xl font-semibold leading-relaxed text-white mb-8">
+            学生会与志愿服务，在组织与协作中锻炼<span class="text-cyan-300">执行力</span>、<span class="text-cyan-300">沟通力</span>与<span class="text-cyan-300">责任意识</span>。
+          </p>
+          <div class="grid sm:grid-cols-3 gap-3 mb-7">
+            <div class="ability-chip"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-zap w-5 h-5" aria-hidden="true"><path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"/></svg><span>执行力</span></div>
+            <div class="ability-chip"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-messages-square w-5 h-5" aria-hidden="true"><path d="M14 9a2 2 0 0 1-2 2H6l-4 4V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2z"/><path d="M18 9h2a2 2 0 0 1 2 2v11l-4-4h-6a2 2 0 0 1-2-2v-1"/></svg><span>沟通力</span></div>
+            <div class="ability-chip"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shield-check w-5 h-5" aria-hidden="true"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/></svg><span>责任意识</span></div>
+          </div>
+          <div class="flex items-start gap-3 p-4 rounded-xl bg-white/[0.03] border border-white/[0.06]">
+            <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-info w-4 h-4 text-slate-500 mt-0.5 shrink-0" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg>
+            <p class="text-sm text-slate-400 leading-relaxed">以上为简历中提及的实践方向与能力收获。具体的活动名称、时间与成果，待你补充后即可展开为完整经历。</p>
+          </div>
+        </div>
+        <figure class="reveal glass-photo overflow-hidden rounded-2xl lg:col-span-2 h-64 lg:h-auto min-h-[300px]">
+          <img src="assets/city-dusk.webp" alt="黄昏时的城市天际线与远山剪影" width="1536" height="1024" loading="lazy" decoding="async" class="w-full h-full object-cover">
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- 技能墙 -->
+  <section class="py-8 sm:py-12" id="skills">
+    <div class="max-w-6xl mx-auto px-6 sm:px-8 lg:px-12">
+      <div class="reveal section-eyebrow flex items-center gap-3 mb-5">
+        <span class="grid place-items-center w-8 h-8 rounded-lg bg-cyan-400/10 border border-cyan-400/20 text-cyan-300"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-layers-3 w-4 h-4" aria-hidden="true"><path d="M12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83z"/><path d="M2 12a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 12"/><path d="M2 17a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 17"/></svg></span>
+        <span>05 / 技能与证书</span>
+      </div>
+      <h2 class="reveal section-title text-white mb-10">技能谱系</h2>
+
+      <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-4">
+        <div class="reveal skill-tile"><span class="skill-ico"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-code-2 w-6 h-6" aria-hidden="true"><path d="m18 16 4-4-4-4"/><path d="m6 8-4 4 4 4"/><path d="m14.5 4-5 16"/></svg></span><strong>Python</strong><span>编程基础</span></div>
+        <div class="reveal skill-tile"><span class="skill-ico"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-brain-circuit w-6 h-6" aria-hidden="true"><path d="M12 5a3 3 0 1 0-5.997.125 4 4 0 0 0-2.526 5.77 4 4 0 0 0 .556 6.588A4 4 0 1 0 12 18Z"/><path d="M9 13a4.5 4.5 0 0 0 3-4"/><path d="M6.003 5.125A3 3 0 0 0 6.401 6.5"/><path d="M3.477 10.896a4 4 0 0 1 .585-.396"/><path d="M6 18a4 4 0 0 1-1.967-.516"/><path d="M12 13h4"/><path d="M12 18h6a2 2 0 0 1 2 2v1"/><path d="M12 8h8"/><path d="M16 8V5a2 2 0 0 1 2-2"/><circle cx="16" cy="13" r=".5"/><circle cx="18" cy="3" r=".5"/><circle cx="20" cy="21" r=".5"/><circle cx="20" cy="8" r=".5"/></svg></span><strong>AI</strong><span>大模型应用</span></div>
+        <div class="reveal skill-tile"><span class="skill-ico"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-monitor w-6 h-6" aria-hidden="true"><rect width="20" height="14" x="2" y="3" rx="2"/><line x1="8" x2="16" y1="21" y2="21"/><line x1="12" x2="12" y1="17" y2="21"/></svg></span><strong>Web</strong><span>前端开发</span></div>
+        <div class="reveal skill-tile"><span class="skill-ico"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-table-2 w-6 h-6" aria-hidden="true"><path d="M9 3H5a2 2 0 0 0-2 2v4m6-6h10a2 2 0 0 1 2 2v4M9 3v18m0 0h10a2 2 0 0 0 2-2V9M9 21H5a2 2 0 0 1-2-2V9m0 0h18"/></svg></span><strong>Excel</strong><span>数据分析</span></div>
+        <div class="reveal skill-tile"><span class="skill-ico"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-presentation w-6 h-6" aria-hidden="true"><path d="M2 3h20"/><path d="M21 3v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V3"/><path d="m7 21 5-5 5 5"/></svg></span><strong>PPT</strong><span>汇报表达</span></div>
+        <div class="reveal skill-tile"><span class="skill-ico"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-terminal w-6 h-6" aria-hidden="true"><polyline points="4 17 10 11 4 5"/><line x1="12" x2="20" y1="19" y2="19"/></svg></span><strong>Prompt</strong><span>提示工程</span></div>
+        <div class="reveal skill-tile"><span class="skill-ico"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-atom w-6 h-6" aria-hidden="true"><circle cx="12" cy="12" r="1"/><path d="M20.2 20.2c2.04-2.03.02-7.36-4.5-11.9-4.54-4.52-9.87-6.54-11.9-4.5-2.04 2.03-.02 7.36 4.5 11.9 4.54 4.52 9.87 6.54 11.9 4.5Z"/><path d="M15.7 15.7c4.52-4.54 6.54-9.87 4.5-11.9-2.03-2.04-7.36-.02-11.9 4.5-4.52 4.54-6.54 9.87-4.5 11.9 2.03 2.04 7.36.02 11.9-4.5Z"/></svg></span><strong>物理</strong><span>建模思维</span></div>
+        <div class="reveal skill-tile"><span class="skill-ico"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-award w-6 h-6" aria-hidden="true"><path d="m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526"/><circle cx="12" cy="8" r="6"/></svg></span><strong>15</strong><span>张 AI 证书</span></div>
+        <div class="reveal skill-tile"><span class="skill-ico"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-clock-3 w-6 h-6" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16.5 12"/></svg></span><strong>3</strong><span>个月自学</span></div>
+        <div class="reveal skill-tile"><span class="skill-ico"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-globe w-6 h-6" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg></span><strong>1</strong><span>个网站作品</span></div>
+        <div class="reveal skill-tile"><span class="skill-ico"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map-pin w-6 h-6" aria-hidden="true"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg></span><strong>银川</strong><span>所在地</span></div>
+        <div class="reveal skill-tile skill-tile-accent"><span class="skill-ico"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-sparkles w-6 h-6" aria-hidden="true"><path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"/><path d="M20 3v4"/><path d="M22 5h-4"/><path d="M4 17v2"/><path d="M5 18H3"/></svg></span><strong>AI 实践</strong><span>持续进化</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 联系方式 -->
+  <section class="py-24 sm:py-32" id="contact">
+    <div class="max-w-6xl mx-auto px-6 sm:px-8 lg:px-12">
+      <div class="reveal section-eyebrow flex items-center gap-3 mb-5">
+        <span class="grid place-items-center w-8 h-8 rounded-lg bg-cyan-400/10 border border-cyan-400/20 text-cyan-300"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail w-4 h-4" aria-hidden="true"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg></span>
+        <span>06 / 联系方式</span>
+      </div>
+      <h2 class="reveal section-title text-white mb-10">聊聊机会</h2>
+
+      <div class="reveal glass-card p-7 sm:p-10 max-w-3xl">
+        <div class="contact-line"><span class="contact-ico"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-user-round w-5 h-5" aria-hidden="true"><circle cx="12" cy="8" r="5"/><path d="M20 21a8 8 0 0 0-16 0"/></svg></span><div><p class="contact-label">姓名</p><p class="contact-value">郭佳煜</p></div></div>
+        <div class="contact-line"><span class="contact-ico"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-briefcase w-5 h-5" aria-hidden="true"><path d="M16 20V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/><rect width="20" height="14" x="2" y="6" rx="2"/></svg></span><div><p class="contact-label">求职意向</p><p class="contact-value">销售技术支持 · 实习</p></div></div>
+        <div class="contact-line"><span class="contact-ico"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map-pin w-5 h-5" aria-hidden="true"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg></span><div><p class="contact-label">地点</p><p class="contact-value">银川 · 远程</p></div></div>
+        <div class="contact-line"><span class="contact-ico"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone w-5 h-5" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg></span><div><p class="contact-label">电话</p><p class="contact-value"><a href="tel:13619563687" class="hover:text-cyan-300 transition-colors">13619563687</a></p></div></div>
+        <div class="contact-line">
+          <span class="contact-ico"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-at-sign w-5 h-5" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M16 8v5a3 3 0 0 0 6 0v-1a10 10 0 1 0-4 8"/></svg></span>
+          <div class="min-w-0 flex-1"><p class="contact-label">邮箱</p><p class="contact-value"><a href="mailto:2516139189@qq.com?subject=求职咨询%20·%20销售技术支持" class="hover:text-cyan-300 transition-colors break-all">2516139189@qq.com</a></p></div>
+          <button type="button" id="copyEmail" class="btn-glow copy-btn" data-email="2516139189@qq.com" aria-label="复制邮箱地址">
+            <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-copy w-4 h-4" aria-hidden="true"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"/><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/></svg><span class="hidden sm:inline">复制邮箱</span>
+          </button>
+        </div>
+        <a href="mailto:2516139189@qq.com?subject=求职咨询%20·%20销售技术支持" class="btn-glow mt-8 w-full inline-flex items-center justify-center gap-3 px-6 py-4 rounded-2xl bg-cyan-400 text-slate-950 font-bold hover:bg-cyan-300 transition-colors">
+          <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-send w-5 h-5" aria-hidden="true"><path d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z"/><path d="m21.854 2.147-10.94 10.939"/></svg> 发送邮件联系我
+          <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right w-5 h-5" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- 页脚 -->
+<footer class="relative z-10 border-t border-white/10 pt-20 pb-8">
+  <div class="max-w-6xl mx-auto px-6 sm:px-8 lg:px-12">
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-8 mb-16">
+      <div class="footer-col"><h3 class="footer-col-title">求职意向</h3><span>销售技术支持</span><span>实习 · 面议</span></div>
+      <div class="footer-col"><h3 class="footer-col-title">联系</h3><a href="mailto:2516139189@qq.com">邮箱</a><a href="tel:13619563687">电话</a></div>
+      <div class="footer-col"><h3 class="footer-col-title">导航</h3><a href="#about">关于</a><a href="#projects">项目</a><a href="#practice">实践</a></div>
+      <div class="footer-col"><h3 class="footer-col-title">地点</h3><span>宁夏 · 银川</span><span>接受远程</span></div>
+    </div>
+    <div class="footer-wordmark" aria-hidden="true">郭佳煜</div>
+    <p class="mt-8 text-center text-slate-500 text-sm">© 2026 郭佳煜 · 用物理思维理解问题，用 AI 放大能力</p>
+  </div>
+</footer>
+
+<!-- 复制成功 Toast -->
+<div id="toast" class="toast" role="status" aria-live="polite">
+  <span class="toast-ico"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check w-4 h-4" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg></span>
+  <span class="toast-label">邮箱已复制到剪贴板</span>
+</div>
+
+<script>
+(function () {
+  'use strict';
+
+  /* 图标已内联为静态 SVG，无需运行时图标库 */
+
+  /* ---------- 导航滚动背景 ---------- */
+  var header = document.getElementById('siteHeader');
+  function syncHeader() {
+    if (header) header.classList.toggle('scrolled', window.scrollY > 24);
+  }
+  window.addEventListener('scroll', syncHeader, { passive: true });
+  syncHeader();
+
+  /* ---------- 滚动入场 ---------- */
+  var revealTargets = Array.prototype.slice.call(document.querySelectorAll('.reveal'));
+  if ('IntersectionObserver' in window) {
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (!entry.isIntersecting) return;
+        var el = entry.target;
+        var siblings = el.parentElement ? Array.prototype.slice.call(el.parentElement.children).filter(function (n) { return n.classList.contains('reveal'); }) : [];
+        var delay = Math.max(0, siblings.indexOf(el)) * 70;
+        setTimeout(function () { el.classList.add('in'); }, delay);
+        io.unobserve(el);
+      });
+    }, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
+    revealTargets.forEach(function (el) { io.observe(el); });
+  } else {
+    revealTargets.forEach(function (el) { el.classList.add('in'); });
+  }
+
+  /* ---------- 项目悬停图片预览 ---------- */
+  var preview = document.getElementById('ledgerPreview');
+  var previewImg = preview ? preview.querySelector('img') : null;
+  var cards = document.querySelectorAll('.project-card');
+  cards.forEach(function (card) {
+    function show() {
+      if (!preview || !previewImg || window.innerWidth <= 900) return;
+      var src = card.getAttribute('data-preview');
+      if (src && previewImg.getAttribute('src') !== src) previewImg.setAttribute('src', src);
+      var wrap = card.closest('.ledger-wrap');
+      if (!wrap) return;
+      var cardRect = card.getBoundingClientRect();
+      var wrapRect = wrap.getBoundingClientRect();
+      preview.style.top = (cardRect.top - wrapRect.top) + 'px';
+      preview.classList.add('visible');
+    }
+    function hide() { if (preview) preview.classList.remove('visible'); }
+    card.addEventListener('mouseenter', show);
+    card.addEventListener('mouseleave', hide);
+    card.addEventListener('focus', show);
+    card.addEventListener('blur', hide);
+  });
+
+  /* ---------- 复制邮箱 + Toast ---------- */
+  var copyBtn = document.getElementById('copyEmail');
+  var toast = document.getElementById('toast');
+  var toastTimer = null;
+
+  function showToast(message, isError) {
+    if (!toast) return;
+    var label = toast.querySelector('.toast-label');
+    if (label) label.textContent = message;
+    var ico = toast.querySelector('.toast-ico');
+    if (ico) ico.style.color = isError ? '#fb7185' : '#22d3ee';
+    toast.classList.add('show');
+    if (toastTimer) clearTimeout(toastTimer);
+    toastTimer = setTimeout(function () { toast.classList.remove('show'); }, 2600);
+  }
+
+  function fallbackCopy(text) {
+    var ta = document.createElement('textarea');
+    ta.value = text;
+    ta.style.position = 'fixed';
+    ta.style.opacity = '0';
+    document.body.appendChild(ta);
+    ta.select();
+    var ok = false;
+    try { ok = document.execCommand('copy'); } catch (e) { ok = false; }
+    document.body.removeChild(ta);
+    return ok;
+  }
+
+  if (copyBtn) {
+    copyBtn.addEventListener('click', function () {
+      var email = copyBtn.getAttribute('data-email') || '';
+      function done(ok) {
+        if (ok) {
+          var ico = copyBtn.querySelector('svg');
+          var CHECK_SVG = '<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>';
+          var COPY_SVG = '<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"/><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/></svg>';
+          if (ico) ico.outerHTML = CHECK_SVG;
+          showToast('邮箱已复制到剪贴板', false);
+          setTimeout(function () {
+            var check = copyBtn.querySelector('svg');
+            if (check) check.outerHTML = COPY_SVG;
+          }, 2200);
+        } else {
+          showToast('复制失败，请手动选择邮箱', true);
+        }
+      }
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(email).then(function () { done(true); }).catch(function () { done(fallbackCopy(email)); });
+      } else {
+        done(fallbackCopy(email));
+      }
+    });
+  }
+
+  /* ---------- 平滑锚点（兼容固定头） ---------- */
+  document.querySelectorAll('a[href^="#"]').forEach(function (link) {
+    link.addEventListener('click', function (e) {
+      var id = link.getAttribute('href').slice(1);
+      var target = id ? document.getElementById(id) : null;
+      if (!target) return;
+      e.preventDefault();
+      var top = target.getBoundingClientRect().top + window.scrollY - 84;
+      window.scrollTo({ top: top, behavior: 'smooth' });
+    });
+  });
+})();
+</script>
+</body>
+</html>
